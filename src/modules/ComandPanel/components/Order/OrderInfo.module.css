@@ -1,0 +1,55 @@
+.heading {
+	text-align: left;
+}
+
+.paper {
+	margin-top: 15px;
+	width: 1250px;
+	padding: 30px;
+}
+
+.orderContainer {
+	display: grid;
+	grid-template-columns: 170px 170px 170px 170px 450px;
+	grid-auto-rows: (50px, auto);
+	column-gap: 20px;
+	text-align: left;
+}
+
+.item {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.tableHeading {
+	font-weight: 600;
+}
+
+.icon {
+	cursor: pointer;
+}
+
+.longItem {
+	grid-column: 1 5;
+}
+
+.clientData {
+	padding: 10px;
+	grid-row: 2 4;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: 280px 280px 150px;
+}
+
+.orderSummary {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.divider {
+	margin-left: 10px;
+}
