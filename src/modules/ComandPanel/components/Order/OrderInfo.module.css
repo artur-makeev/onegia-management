@@ -32,15 +32,22 @@
 }
 
 .longItem {
-	grid-column: 1 5;
+	grid-column: 1 / 5;
 }
 
 .clientData {
 	padding: 10px;
-	grid-row: 2 4;
+	grid-row: 2 / 4;
+	grid-column: 5;
 }
 
 .products {
+	display: grid;
+	grid-template-columns: 280px 280px 150px;
+}
+
+.productsList {
+	grid-column: 1 / 4;
 	display: grid;
 	grid-template-columns: 280px 280px 150px;
 }

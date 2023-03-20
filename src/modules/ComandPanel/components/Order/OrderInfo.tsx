@@ -79,11 +79,14 @@ export const OrderInfo: FC<Props> = ({ order }): JSX.Element => {
 							</div>
 							{order.order_products.map((product) => {
 								return (
-									<>
+									<div
+										key={`${product.product_name} ${product.aroma_name}`}
+										className={styles.productsList}
+									>
 										<div className={styles.item}>{product.product_name}</div>
 										<div className={styles.item}>{product.aroma_name}</div>
 										<div className={styles.item}>{product.count}</div>
-									</>
+									</div>
 								);
 							})}
 						</div>
